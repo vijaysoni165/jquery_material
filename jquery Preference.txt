@@ -1,0 +1,13 @@
+https://www.w3resource.com/jquery-exercises/part1/index.php
+https://www.tutorialrepublic.com/jquery-examples.php
+https://www.javatpoint.com/jquery-each-method
+
+
+React 13
+
+Frame 
+Const = Var
+React.Dom(
+HTML show
+)
+document.getElementById("kya rendar karna hai", kaha rendaar karna jai)
