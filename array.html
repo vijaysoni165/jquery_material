@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>SamcoMF | Initiate a transaction</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">   
+   <link rel="stylesheet" type="text/css" href="css/distributor.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/5.0.7/sweetalert2.min.css">   
+   <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
+   <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+   <style>
+    .container{
+    padding-top:5px;  
+    }
+    .result{
+    padding-top:5px;
+    }
+    ul{
+    padding-bottom:5px;
+    }
+    .loading{display: none;}
+ </style>
+</head>
+<body class="body-gray">
+<div class="container">
+  <!-- <button >Click</button>   -->
+  <select id="load_ajax" >
+   <option value="https://jsonplaceholder.typicode.com/photos">A</option>
+   <option value="https://jsonplaceholder.typicode.com/photos1">B</option>
+   <option value="https://jsonplaceholder.typicode.com/photos2">C</option>
+  </select>
+  <div class="containers"></div>
+  <div class="loading">Loading</div>
+  <div id="demo"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+
+   <script>
+      $(document).ready(function(){
+         var car = ["Lorem","Lorem1",];
+         console.log(car);
+         document.getElementById("demo").innerHTML = car + "1";         
+      });
+   </script>
+</body>
+</html>
