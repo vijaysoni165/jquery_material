@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        // let number = 100;
+        // number = number + 10;
+        // number += 10; 
+        // console.log(number);     
+
+        // let age = 7;
+        // var x = "vijay age " + age + "";
+        // var y = `vijay age ${age}`;
+        // console.log(x, y);
+
+        // let count;
+        // console.log(count);
+        // count = 10;
+        // console.log(count);
+
+        // const numberofcoloumn = 0;
+        // console.log(numberofcoloumn);
+        // numberofcoloumn = 10;
+        // console.log(numberofcoloumn);
+
+    //    var x = 1;
+    //    check = (x == 1) ? false : true;
+    //    console.log(check)
+
+// function sayHello(name){
+//     return `Hello ${name}`
+// }
+// console.log(sayHello(2))
+
+// const IsLoggedIn = true;
+// if(IsLoggedIn == true){
+//     const statusMessage = "Logged in";    
+// }
+// console.log(statusMessage);
+
+
+// var color = 'blue';
+// function myFunction(){
+//     console.log(color);
+// }
+// myFunction();
+
+
+// for (let j = 0; j < 3; j++) {
+//   setTimeout(_ => console.log(j), 10)
+// }
+//console.log(i);
+
+// Reverse Loop
+// const fruits = ["Apple", "Banana"]
+// for(let i = fruits.length -1; i >= 0; i--){
+//     console.log(`${i} .${fruits[i]}`);
+// }
+
+// do while loop
+// x = 0 ;
+// y = 1;
+// do{
+//   y = x + y;
+//     console.log(y);
+//     y++;
+// }while( y < 5);
+
+// continue array
+// for(let i = 0; 1 < 50; i++){
+//     if( i === 3){
+//         continue;
+//     }
+//     text += "this is a text " + i + "";
+//     console.log(text);
+// }
+
+
+// Nested loop
+// for(let i = 0; i < 3; i++){
+//     for (let j = 0; j < 3; j++){
+//         console.log(`${i} - ${j}`);
+//     }
+// }
+
+// let friuts = ["banana", "aplle", "blue berry"]
+// for (let index of friuts){
+//     console.log(index);
+// }
+
+
+
+// Promise Design in javascript 
+
+// const mypromise = new Promise((resolve, reject) => {
+// const res = true;
+// if(res){
+//     resolve("yes redolve");
+// }
+// else{
+//     reject("Not Resolve")
+// }
+// })    
+
+// mypromise.then((res) => console.log(res), (err) => console.error(err));
+// const Eccutionfunction = (resolves, rejects) => {
+//     resolves("yes");
+// }
+// const promise = new Promise(Eccutionfunction);
+
+
+// function myDisplayer(some){
+//     document.getElementById("demo").innerHTML = some;
+// }
+
+// async function myFunction(){
+//     return "Hello";
+// }
+
+// myFunction().then(
+//     function(value) {myDisplayer(value);},
+//     function(err) {myDisplayer(err);}
+// )
+
+
+function helloWorld(){
+    return new Promise(resolve => {
+        setTimeout(()=>{
+            resolve("Hello World");
+        }, 2000);
+    })
+}
+
+async function myFunction(){
+    const msg = await  helloWorld();
+    console.log("message", msg)
+
+}
+
+myFunction();
+
+</script>
+
+
+</body>
+</html>

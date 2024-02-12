@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>SamcoMF | Initiate a transaction</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">   
+   <link rel="stylesheet" type="text/css" href="css/distributor.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/5.0.7/sweetalert2.min.css">   
+   <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
+   <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+   <style>
+    .container{
+    padding-top:5px;  
+    } 
+    .accordion-header {
+  cursor: pointer;
+}
+
+   .accordion-content {
+   display: none;
+   }
+   .accordion-content1 {
+   display: none;
+   }
+
+ 
+ </style>
+</head>
+<body class="body-gray">
+   <!-- <a href="#home" data-target="#myModal1">Home</a>
+   <a href="#about" data-target="#myModal2">About</a>
+   <div class="accordion-content1" data-modal="#home"  id="home">H</div>
+   <div class="accordion-content1" data-modal="#bout"  id="about">A</div>
+<div class="container">
+   <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Header 1
+        </div>
+        <div class="accordion-content">
+          Content 1
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Header 2
+        </div>
+        <div class="accordion-content">
+          Content 2
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Header 3
+        </div>
+        <div class="accordion-content">
+          Content 3
+        </div>
+      </div>
+    </div>
+    
+</div> -->
+
+<!-- <div>This div should be white</div>
+ <div class="red">This div will be green because it now has the "green" and "red" classes.
+   It would be red if the addClass function failed.</div>
+ <div>This div should be white</div>
+ <p>There are zero green divs</p>
+
+ <div></div> -->
+ <!-- click on this button -->
+ <!-- <button>Click Here!</button>
+ <br>
+ <br>
+
+ <h1 style="color:green;">
+  GeeksForGeeks
+</h1> -->
+
+<!-- <p>When you click
+<a href="https://ide.geeksforgeeks.org">
+  Go to geeks</a>, or close the window,
+an alert box will be triggered.</p> -->
+
+<button>click me</button>
+<div id="stop-log"></div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+   // $(document).ready(function(){
+   //    $('.accordion-header').on('click', function(){
+   //       $(this).next(".accordion-content").slideToggle();         
+   //       $(this).addClass(".active");
+   //    });
+   // });
+
+  //  $(function($){
+  //     $("a").on("click",function(){
+  //       // var dataModal = $(this).attr('href');                    
+  //       var dataModal = $(this).data('target');                  
+  //       console.log(dataModal);
+  //       $(dataModal).addClass('in');                 
+  //     });
+  //  });
+
+  //  $(document).ready(function(){
+  //     $(".accordion-header").on("click",function(){         
+  //        // var currentItem = (this).closest('.accordion-item');
+  //        var currentItem  = (this).closest(".accordion-item");   
+         
+  //        if(currentItem .hasClass('active')){
+  //           alert("yes");            
+  //           currentItem .removeClass('active')
+  //        }
+  //        else{
+  //           alert('no');
+  //        }
+  //        console.log(currentItem );
+  //     });
+  //  });
+
+</script>
+<script>
+  // var test = $(".accordion-header")
+  // test = test.add(document.getElementsByClassName('.accordion-content'));
+  // test = test.css("background", "red");
+// $("div").addClass(function(index, currentClass){
+//     var addedClass;
+//     if(currentClass === "red"){
+//       addedClass = "green";      
+//     }
+//     $("p").last().text("Test")
+//     return addedClass;
+// })
+
+
+// $(document).ready(function(){
+
+// })
+// $(function(){
+//   $("Click1, click2").on("click", function(){
+
+//   });
+// })
+
+
+// $(document).ready(function() {
+//                 $("button").click(function() {
+//                     var $GFG = $("div");
+//                     $GFG.prop("color", "green");
+//                     $GFG.append("The value of color: " + $GFG.prop("color"));
+//                     $GFG.removeProp("color");
+//                     $GFG.append("<br>The value of color after removeProp: " 
+//                                             + $GFG.prop("color"));
+//                 });
+//             });
+            
+
+
+
+
+	// <!-- Script to illustrates unload() method -->
+
+  function propStopped( event ) {
+  var msg = "";
+  if ( event.isPropagationStopped() ) {
+    msg = "called";
+  } else {
+    msg = "not called";
+  }
+  $( "#stop-log" ).append( "<div>" + msg + "</div>" );
+}
+ 
+$( "button" ).on( "click", function( event ) {
+  propStopped( event );
+  event.stopPropagation();
+  propStopped( event );
+} );
+
+
+</script>
+</body>
+</html>

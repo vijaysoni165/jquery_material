@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">      
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700&display=swap" rel="stylesheet">      
+      <title></title>
+      <style>
+        #demo{border: 1px solid red;}
+      </style>
+   </head>
+   <body class="cyan register-page m-page--fluid m--skin-  m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default new-design">
+      <h1></h1>
+      <h2>JavaScript HTML DOM</h2>
+      <p id="intro">Finding HTML Elements by Id</p>
+      <p>This example demonstrates the <b>getElementsById</b> method.</p>
+      <p id="demo"></p>
+      <button onclick="addClass()">Click</button>
+
+
+      <button onclick="addClass1()">Click</button>
+      <button onclick="removeClass()">Click</button>
+            
+      <script>
+         var element = document.getElementById('intro');
+         document.getElementById('demo').innerHTML= element.innerHTML;
+         document.getElementById('demo').style.fontSize = '18px';
+         document.getElementById('demo').style.color = 'blue';
+         document.getElementById('demo').classList.add("vijay");
+
+         // Creat a button element
+         const button = document.createElement('button');
+         button.textContent = 'click me';
+
+         const demo = document.getElementById('demo')
+         demo.appendChild(button);
+
+         
+         function changetext(){
+            demo.innerHTML = 'just test';
+         }
+         
+         button.addEventListener('onkeydown', changetext())
+
+         function addClass1(){            
+            document.getElementById('demo').add('addclass');
+         }
+         function removeClass(){
+            document.getElementById('demo').remove('addclass');
+         }
+
+         // const myHeading = document.querySelector("h1");
+         // myHeading.textContent = "HelloW World";
+
+         function multiply(num1, num2){
+            let result = num1 * num2;
+            return result
+         }
+
+         document.querySelector("html").                       
+      </script>
+
+      <script>
+         var a = 33;
+            var b = 10;
+            var c = "Test";
+            var linebreak = "<br />";
+
+         document.write("a + b = ");
+         result = a + b;
+         document.write(result);
+      </script>
+      
+   </body>
+</html>
